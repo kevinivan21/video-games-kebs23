@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Games Kebs</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffffff;
+      color: #222;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header img {
+      width: 50px;
+      height: 50px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin: 10px 0 5px;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #eee;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      color: #333;
+      padding: 10px 15px;
+      font-size: 15px;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    nav button:hover {
+      background-color: #e0e0e0;
+    }
+
+    section {
+      display: none;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    img.content-img {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    form button {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    form button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll("section");
+      secciones.forEach(sec => sec.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+    }
+    window.onload = () => mostrarSeccion('inicio');
+  </script>
+</head>
+<body>
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732228.png" alt="Logo Video Games Kebs">
+    <h1>Video Games Kebs</h1>
+    <p>Innovación y pasión en cada videojuego</p>
+  </header>
+  <nav>
+    <button onclick="mostrarSeccion('inicio')">Inicio</button>
+    <button onclick="mostrarSeccion('justificacion')">Justificación</button>
+    <button onclick="mostrarSeccion('objetivo')">Objetivo</button>
+    <button onclick="mostrarSeccion('productos')">Productos</button>
+    <button onclick="mostrarSeccion('mision')">Misión y Visión</button>
+    <button onclick="mostrarSeccion('empresa')">La Empresa</button>
+    <button onclick="mostrarSeccion('formulario')">Pedidos</button>
+  </nav>
+
+  <section id="inicio" class="active">
+    <h2>Bienvenido a Video Games Kebs</h2>
+    <p>Descubre nuestra propuesta innovadora de entretenimiento digital y videojuegos de alta calidad.</p>
+    <img class="content-img" src="https://imagenes.elpais.com/resizer/v2/6ROWIXG7SVG5RHS3YGBOASRD6U.jpg?auth=245524f62034f9e70f1ab3c10954d7bf048ac7a43db6fc1adda99a55f0d4f097&width=414" alt="Inicio empresa">
+  </section>
+
+  <section id="justificacion">
+    <h2>Justificación</h2>
+    <p>Video Games Kebs nace para satisfacer la creciente demanda de entretenimiento digital en el sector juvenil y gamer. Busca posicionarse como referente en el desarrollo y distribución de videojuegos originales y de calidad.</p>
+    <img class="content-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo41drbYCzSNPhcwKnNa0-jo7XzQE3jXNlbA&s" alt="Jugadores contentos">
+  </section>
+
+  <section id="objetivo">
+    <h2>Objetivo</h2>
+    <p>Desarrollar videojuegos innovadores que brinden experiencias inmersivas, fomenten la creatividad y se adapten a las necesidades de los jugadores actuales.</p>
+    <img class="content-img" src="https://erikstore.com/blog/wp-content/uploads/2024/08/Juegos-mas-vendidos-de-la-historia-1080x675.webp" alt="Objetivo ventas">
+  </section>
+
+  <section id="productos">
+    <h2>Productos o Servicios</h2>
+    <ul>
+      <li>Desarrollo de videojuegos para PC, consolas y móviles.</li>
+      <li>Venta de videojuegos propios y de terceros.</li>
+      <li>Diseño gráfico y conceptual para videojuegos.</li>
+      <li>Torneos y eventos gamer.</li>
+      <li>Venta de merchandising relacionado.</li>
+    </ul>
+    <img class="content-img" src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/QDQ6SWE2GZE7HE45WUHIW2MHJ4.jpg" alt="Servicios y productos">
+  </section>
+
+  <section id="mision">
+    <h2>Misión</h2>
+    <p>Crear experiencias de entretenimiento digital de alta calidad que inspiren, eduquen y conecten a los jugadores mediante videojuegos innovadores y accesibles.</p>
+    <h2>Visión</h2>
+    <p>Ser líderes en la industria de los videojuegos en Latinoamérica, destacando por creatividad, comunidad y excelencia.</p>
+  </section>
+
+  <section id="empresa">
+    <h2>Sobre la Empresa</h2>
+    <p><strong>Descripción:</strong> Empresa joven, creativa e innovadora enfocada en videojuegos originales. Promueve inclusión, educación y colaboración.</p>
+    <p><strong>Mercado meta:</strong> Jóvenes de 13 a 30 años, desarrolladores, instituciones educativas y comunidades e-sports.</p>
+    <h3>Organigrama</h3>
+    <pre>
+Director General
+     |
+---------------------------------------------------
+|            |             |                  |
+Desarrollo  Diseño      Marketing         Administración
+            Gráfico     y Ventas          y Finanzas
+   |           |             |                   |
+Program.  Ilustra.  Community Manager      Contador
+Diseño    Animadores  Encargado Ventas     Auxiliar
+Niveles   Dir. Arte   Gerente Marketing    Admin.
+
+                Soporte y Servicio al Cliente
+                      |
+    Coordinador Atención - Técnicos de Soporte
+    </pre>
+  </section>
+
+  <section id="formulario">
+    <h2>Formulario de Pedido</h2>
+    <form action="#" method="post">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="email" name="correo" placeholder="Correo electrónico" required>
+      <select name="producto">
+        <option value="galaxyquest">Galaxy Quest</option>
+        <option value="zombiecity">Zombie City</option>
+        <option value="pixelkart">Pixel Kart</option>
+        <option value="mindmaze">Mind Maze</option>
+      </select>
+      <input type="number" name="cantidad" min="1" placeholder="Cantidad" required>
+      <textarea name="comentarios" placeholder="Comentarios adicionales (opcional)" rows="4"></textarea>
+      <button type="submit">Enviar Pedido</button>
+    </form>
+  </section>
+</body>
+</html>
